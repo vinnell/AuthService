@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>TestNG:  AuthServiceTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AuthServiceTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 10 19:00:25 EET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2105 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testInvalidAuthentication()'><b>testInvalidAuthentication</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testInvalidAuthentication</td>
+<td><div><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [testInvalidAuthentication] with [class java.lang.String, class java.lang.String, class net.absoft.data.Response].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1180165431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1180165431'><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [testInvalidAuthentication] with [class java.lang.String, class java.lang.String, class net.absoft.data.Response].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:669)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:856)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@76505305</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testAuthenticationWithEmptyEmail()'><b>testAuthenticationWithEmptyEmail</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testAuthenticationWithEmptyEmail</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void net.absoft.AuthenticationServiceTest.testAuthenticationWithEmptyEmail()] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: testAuthenticationWithEmptyEmail([])
+Arguments: [(java.lang.String) user1@test.com,(java.lang.String) wrong_password,(net.absoft.data.Response) Response{code=401, message=&apos;Invalid email or password&apos;}]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1614455674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1614455674'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void net.absoft.AuthenticationServiceTest.testAuthenticationWithEmptyEmail()] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: testAuthenticationWithEmptyEmail([])
+Arguments: [(java.lang.String) user1@test.com,(java.lang.String) wrong_password,(net.absoft.data.Response) Response{code=401, message=&apos;Invalid email or password&apos;}]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:886)
+	at org.testng.internal.invokers.MethodRunner.runInParallel(MethodRunner.java:107)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:934)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@4218d6a3</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testInvalidAuthentication()'><b>testInvalidAuthentication</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testInvalidAuthentication</td>
+<td><div><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [testInvalidAuthentication] with [class java.lang.String, class java.lang.String, class net.absoft.data.Response].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace319523274", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace319523274'><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [testInvalidAuthentication] with [class java.lang.String, class java.lang.String, class net.absoft.data.Response].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:669)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:856)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@4218d6a3</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testAuthenticationWithEmptyEmail()'><b>testAuthenticationWithEmptyEmail</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testAuthenticationWithEmptyEmail</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void net.absoft.AuthenticationServiceTest.testAuthenticationWithEmptyEmail()] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: testAuthenticationWithEmptyEmail([])
+Arguments: [(java.lang.String) user1@test.com,(java.lang.String) wrong_password,(net.absoft.data.Response) Response{code=401, message=&apos;Invalid email or password&apos;}]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1074047491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1074047491'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void net.absoft.AuthenticationServiceTest.testAuthenticationWithEmptyEmail()] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: testAuthenticationWithEmptyEmail([])
+Arguments: [(java.lang.String) user1@test.com,(java.lang.String) wrong_password,(net.absoft.data.Response) Response{code=401, message=&apos;Invalid email or password&apos;}]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:886)
+	at org.testng.internal.invokers.MethodRunner.runInParallel(MethodRunner.java:107)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:934)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@76505305</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testAuthenticationWithEmptyPassword()'><b>testAuthenticationWithEmptyPassword</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testAuthenticationWithEmptyPassword</td>
+<td></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@4218d6a3</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testSuccessfulAuthenticationWithUnderscore()'><b>testSuccessfulAuthenticationWithUnderscore</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testSuccessfulAuthenticationWithUnderscore</td>
+<td></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@4218d6a3</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testSuccessfulAuthenticationWithUnderscore()'><b>testSuccessfulAuthenticationWithUnderscore</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testSuccessfulAuthenticationWithUnderscore</td>
+<td></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@76505305</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testAuthenticationWithInvalidEmail()'><b>testAuthenticationWithInvalidEmail</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testAuthenticationWithInvalidEmail</td>
+<td></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@4218d6a3</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testAuthenticationWithEmptyPassword()'><b>testAuthenticationWithEmptyPassword</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testAuthenticationWithEmptyPassword</td>
+<td></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@76505305</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testAuthenticationWithInvalidEmail()'><b>testAuthenticationWithInvalidEmail</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testAuthenticationWithInvalidEmail</td>
+<td></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@76505305</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testSuccessfulAuthenticationWithDifferentCaseinPassword()'><b>testSuccessfulAuthenticationWithDifferentCaseinPassword</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testSuccessfulAuthenticationWithDifferentCaseinPassword</td>
+<td></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@4218d6a3</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testSample()'><b>testSample</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testSample</td>
+<td></td>
+<td>2</td>
+<td>net.absoft.AuthenticationServiceTest@76505305</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testSuccessfulAuthenticationWithDifferentCaseinPassword()'><b>testSuccessfulAuthenticationWithDifferentCaseinPassword</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testSuccessfulAuthenticationWithDifferentCaseinPassword</td>
+<td></td>
+<td>0</td>
+<td>net.absoft.AuthenticationServiceTest@76505305</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testSuccessfulAuthentication()'><b>testSuccessfulAuthentication</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testSuccessfulAuthentication<br>Parameters: user1@test.com, password1</td>
+<td></td>
+<td>2</td>
+<td>net.absoft.AuthenticationServiceTest@4218d6a3</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testSuccessfulAuthentication()'><b>testSuccessfulAuthentication</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testSuccessfulAuthentication<br>Parameters: user1@test.com, password1</td>
+<td></td>
+<td>2</td>
+<td>net.absoft.AuthenticationServiceTest@76505305</td></tr>
+<tr>
+<td title='net.absoft.AuthenticationServiceTest.testSample()'><b>testSample</b><br>Test class: net.absoft.AuthenticationServiceTest<br>Test method: Updated descriptions:testSample</td>
+<td></td>
+<td>2</td>
+<td>net.absoft.AuthenticationServiceTest@4218d6a3</td></tr>
+</table><p>
+</body>
+</html>

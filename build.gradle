@@ -15,5 +15,23 @@ dependencies {
 }
 
 test {
-    useTestNG()
+    useTestNG() {
+        suites "src/test/resources/suites/suite.xml";
+        suites "src/test/resources/suites_positive/suite_positive.xml"
+
+        useDefaultListeners true
+        if (System.properties['group']) {
+            includeGroups System.properties['group']
+        }
+    }
+    ignoreFailures = true
+
+    }
+
+
+task retest(type: Test) {
+    useTestNG() {
+        suites "build/reports/tests/test/testng-failed.xml";
+
+    }
 }

@@ -21,7 +21,9 @@ public class DbConnection {
     // Mimic request to DB server
     Map<String, String> users = Map.of(
         "user1@test.com", "password1",
-        "user2@test.com", "password2"
+        "user2@test.com", "password2",
+            "user_1@test.com", "password1",
+            "user_2@test.com", "PaSsword1"
     );
 
     return users.containsKey(email) && users.get(email).contentEquals(password);
